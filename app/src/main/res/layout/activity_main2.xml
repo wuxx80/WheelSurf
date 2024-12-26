@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+
+    <EditText
+        android:id="@+id/lottery_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:hint="请输入你想要的奖品下"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1"
+        android:textSize="12sp" />
+
+
+    <com.mengpeng.wheelsurf.LotteryView
+        android:id="@+id/lotteryView"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:text="注意事项：(九宫格方式抽奖) \n1.奖品下标从0开始 \n2.奖品不能是下标是4的宫格"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
